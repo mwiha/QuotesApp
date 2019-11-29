@@ -1,7 +1,7 @@
-import { Goal } from './quote';
+import { Quote } from './quote';
 
 describe('Goal', () => {
   it('should create an instance', () => {
-    expect(new Goal()).toBeTruthy();
+    expect(new Quote()).toBeTruthy();
   });
 });
