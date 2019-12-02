@@ -22,11 +22,11 @@ export class QuoteComponent implements OnInit {
 
 constructor() { 
 this.quote=[
-new Quote(1, 'William James','"Act as if what you do makes a difference. It does',new Date()),
-new Quote(2,'Winston.S.Churchill','"Success is not final, failure is not fatal: it is the courage to continue that counts."',new Date()),
-new Quote(3,'Albert Einstein','"Try not to become a man of success. Rather become a man of value."',new Date()),
-new Quote(4,'Dr. Seuss','"Life is like riding a bicycle. To keep your balance, you must keep moving."',new Date()),
-new Quote(5,'Henry David Thoreu','"Success usually comes to those who are too busy to be looking for it."',new Date()),
+new Quote(1, 'William James','"Act as if what you do makes a difference. It does',new Date(2017,11)),
+new Quote(2,'Winston.S.Churchill','"Success is not final, failure is not fatal: it is the courage to continue that counts."',new Date(2018,4)),
+new Quote(3,'Albert Einstein','"Try not to become a man of success. Rather become a man of value."',new Date(2018,7)),
+new Quote(4,'Dr. Seuss','"Life is like riding a bicycle. To keep your balance, you must keep moving."',new Date(2019,6)),
+new Quote(5,'Henry David Thoreu','"Success usually comes to those who are too busy to be looking for it."',new Date(2019,9)),
 ];
 }
 addNewQuote(quote){

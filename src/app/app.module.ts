@@ -8,6 +8,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
+import {TimeAgoPipe} from 'time-ago-pipe';
 import { from } from 'rxjs';
 
 
@@ -18,6 +19,7 @@ import { from } from 'rxjs';
     QuoteDetailComponent,
     DateCountPipe,
     QuoteFormComponent,
+    TimeAgoPipe,
   
   ],
   imports: [

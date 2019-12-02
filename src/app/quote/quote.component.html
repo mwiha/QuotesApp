@@ -9,7 +9,7 @@
         <div class="col-md-6">
             <div class *ngFor='let quote of quote;let i = index'>
                 <div>
-                    <h4 id={{i}} appStrikethrough>{{quote.name}} <p class="post">posted {{quote.completeDate|date}}</p>
+                    <h4 id={{i}} appStrikethrough>{{quote.name}} <p class="post">posted {{quote.completeDate|timeAgo}}</p>
                     </h4>
                    
                         <button (click)='toggleDetail(i)'> View Quote</button>
