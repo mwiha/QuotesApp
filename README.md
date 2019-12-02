@@ -11,6 +11,9 @@
 
 ## BDD
 
+<img src="src/assets/Quote.png">
+
+
 - The application allows the user to add quotes,Author in the form card. The user is also able to like or dislike the quotes.Once the user clicks on the submit button, it sends an alert message that the request has been received,then the quote is dislayed.
 
 ## Technology Used
