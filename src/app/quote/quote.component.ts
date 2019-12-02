@@ -29,7 +29,12 @@ new Quote(4,'Dr. Seuss','"Life is like riding a bicycle. To keep your balance, y
 new Quote(5,'Henry David Thoreu','"Success usually comes to those who are too busy to be looking for it."',new Date()),
 ];
 }
-
+addNewQuote(quote){
+  let quoteLength = this.quote.length;
+  quote.id = quoteLength+1;
+  quote.completenewDate = new Date(quote.completeDate)
+  this.quote.push(quote)
+}
   ngOnInit() {
   }
 }
