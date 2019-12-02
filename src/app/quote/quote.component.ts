@@ -17,6 +17,9 @@ this.quote=[
 {id:5,name:'"Success usually comes to those who are too busy to be looking for it."'},
 {id:6,name:'"There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed."'},
 ];
+
+     toggleDetails(index){
+  this.quote[index].showDescription = !this.quote[index].showDescription
 }
    
 
