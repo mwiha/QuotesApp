@@ -10,8 +10,6 @@
 
 ## BDD
 
-<img src="src/assets/Quote.png">
-
 - The application allows the user to add quotes,Author in the form card. The user is also able to like or dislike the quotes.Once the user clicks on the submit button, it sends an alert message that the request has been received,then the quote is dislayed.
 
 ## Technology Used
@@ -27,7 +25,7 @@
 - Clone this repository to a location in your file system.
 - Open terminal command line then navigate to the root - - folder of the application.
 - Run ng serve command.
-- Navigate to http://localhost:4600/ in your browser.
+- Navigate to <http://localhost:4200/> in your browser.
 
 ## Known Bugs
 
