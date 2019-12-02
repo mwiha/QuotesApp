@@ -32,7 +32,7 @@ new Quote(5,'Henry David Thoreu','"Success usually comes to those who are too bu
 addNewQuote(quote){
   let quoteLength = this.quote.length;
   quote.id = quoteLength+1;
-  quote.completenewDate = new Date(quote.completeDate)
+  quote.completeDate = new Date(quote.completeDate)
   this.quote.push(quote)
 }
   ngOnInit() {
