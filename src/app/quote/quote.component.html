@@ -2,9 +2,11 @@
     <h1>QUOTES</h1>
     <hr>
     <ul>
-        <li *ngFor='let quote of quotes'>
-            {{quote.name}}
-            <app-quote-detail [quote]='quote'></app-quote-detail>
-        </li>
+        <div *ngFor='let goalof goals;let i =index'>
+        <li>{{goal.name}}</li>
+        <button (click)='toggleDetails(i)'>Toggle Details</button>
+        <app-goal-detail *ngIf='goal.showDescription' [goal]='goal'></app-goal-detail>
+        </div>
     </ul>
+    <p>{{goal.description}}</p>
 </div>
