@@ -6,24 +6,30 @@ import {Quote} from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+  quote:Quote[];
 
-    quote:Quote[];
+  toggleDetail(index){
+    this.quote[index].showDescription = !this.quote[index].showDescription;
+  }
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete  this Quote for  ${this.quote[index].name}?`)
+      if (toDelete){
+        this.quote.splice(index,1)
+      }
+    }
+  }
+
 constructor() { 
 this.quote=[
-{id:1, name:'"Act as if what you do makes a difference. It does'},
-{id:2,name:'"Success is not final, failure is not fatal: it is the courage to continue that counts."'},
-{id:3,name:'"Try not to become a man of success. Rather become a man of value."'},
-{id:4,name:'"Life is like riding a bicycle. To keep your balance, you must keep moving."'},
-{id:5,name:'"Success usually comes to those who are too busy to be looking for it."'},
-{id:6,name:'"There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed."'},
+new Quote(1, 'William James','"Act as if what you do makes a difference. It does',new Date()),
+new Quote(2,'Winston.S.Churchill','"Success is not final, failure is not fatal: it is the courage to continue that counts."',new Date()),
+new Quote(3,'Albert Einstein','"Try not to become a man of success. Rather become a man of value."',new Date()),
+new Quote(4,'Dr. Seuss','"Life is like riding a bicycle. To keep your balance, you must keep moving."',new Date()),
+new Quote(5,'Henry David Thoreu','"Success usually comes to those who are too busy to be looking for it."',new Date()),
 ];
-
-     toggleDetails(index){
-  this.quote[index].showDescription = !this.quote[index].showDescription
 }
-   
 
   ngOnInit() {
   }
-
 }
